@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -9,10 +7,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="font-bold text-xl">Průmyslový Summit</div>
           <div className="hidden md:flex gap-6">
-            <Link href="/program" className="hover:underline">Program</Link>
-            <Link href="/partneri" className="hover:underline">Partneři</Link>
-            <Link href="/vstupenky" className="hover:underline">Vstupenky</Link>
-            <Link href="/kontakt" className="hover:underline">Kontakt</Link>
+            <Link href="/program">Program</Link>
+            <Link href="/partneri">Partneři</Link>
+            <Link href="/vstupenky">Vstupenky</Link>
+            <Link href="/kontakt">Kontakt</Link>
           </div>
         </div>
       </nav>
@@ -22,7 +20,9 @@ export default function Home() {
         <p className="text-lg mb-6">
           Klíčové setkání lídrů průmyslu, technologií a inovací. 14. listopadu 2025 v PVA Expo Praha.
         </p>
-        <Button className="text-lg px-8 py-4">Získat vstupenku</Button>
+        <a href="/vstupenky" className="bg-black text-white px-6 py-3 rounded inline-block text-lg">
+          Získat vstupenku
+        </a>
       </section>
     </main>
   );
